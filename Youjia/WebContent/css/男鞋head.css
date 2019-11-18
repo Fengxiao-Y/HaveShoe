@@ -1,0 +1,46 @@
+.head_top{
+	width:auto;
+	height:300px;
+}
+
+.top_background{
+	margin-left:-10px;
+	width:auto;
+	height:80px;
+	background-image:url("../images/top-pc-onsale.jpg");
+}
+
+.head_center{
+	margin-left:-10px;
+	background:#282828;
+	padding-top:15px;
+	width:auto;
+	height:50px;
+}
+
+a{
+	text-decoration:none;
+}
+
+.head_center a{
+	font-weight:bold;
+	line-height:0px;
+	margin-left:50px;
+	font-size:18px;
+	color:white;
+}
+
+.head_bottom{
+	padding-left:500px;
+	line-height:30px;
+	font-size:15px;
+	margin-left:-10px;
+	width:1600px;
+	height:30px;
+	border-bottom:1px gray solid;
+}
+
+.head_bottom a{
+	color:black;
+	margin-left:150px;
+}

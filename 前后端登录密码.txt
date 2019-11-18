@@ -1,0 +1,17 @@
+前端路径：http://localhost:8080/Youjia/jsp/home.jsp
+
+前端用户名：邓小威	
+前端密码：123456
+
+
+后端路径：http://localhost:8080/Youjia/back/login.jsp
+
+后端用户名：李卫
+后端密码：123456
+
+
+商家账号：tpavbb4540@sandbox.com   
+pass:111111
+
+买家账号：vhjqcr1096@sandbox.com
+pass:111111

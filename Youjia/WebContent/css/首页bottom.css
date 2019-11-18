@@ -1,0 +1,77 @@
+.bottom{
+	margin-top:800px;
+	display:block;
+	width:1920px;
+	height:650px;
+}
+
+.bottom_top{
+	width:1920px;
+	height:120px;
+	background:black;
+}
+
+.bottom_top{
+	color:white;
+	font-weight:bold;
+	text-align:left;
+}
+
+.space{
+	width:200px;
+}
+
+
+.bottom_top tr td{
+	border:none;
+	height:120px;
+}
+
+.bottom_top span{
+	color:gray;
+	font-size:12px;
+}
+
+.bottom_top tr td a{
+	color:white;
+}
+
+.bottom_center{
+	width:1920px;
+	height:520px;
+}
+
+.center_table{
+	width:1240px;
+	height:500px;
+}
+
+.bold_title{
+	font-weight:bold;
+}
+
+.center_table{
+	margin:auto;
+}
+
+.center_table td{
+	text-align:center;
+	width:180px;
+	height:30px;
+}
+
+.center_table td a{
+	color:black;
+	font-size:13px;
+}
+
+.payway{
+	font-weight:bold;
+	font-size:18px;
+}
+
+.bottom_last{
+	width:1920px;
+	height:30px;
+	background:black;
+}

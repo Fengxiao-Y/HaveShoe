@@ -1,0 +1,174 @@
+.center_top{
+	margin-left:-10px;
+	width:1920px;;
+	height:720px;
+	background-image:url("../images/kv-pc.jpg");
+	background-repeat:no-repeat;
+}
+
+.center_top a{
+	font-size:40px;
+	font-weight:bold;
+	color:black;
+	margin-left:220px;
+	line-height:1000px;
+}
+
+
+.center_top a:hover{
+	color:gray;
+}
+
+.top_adi{
+	width:1960px;
+	height:613px;
+}
+
+.adi_left{
+	background-image:url("../images/WINTER.jpg");
+	background-repeat:no-repeat;
+	width:956px;
+	height:613px;
+	float:left;
+}
+
+.adi_right{
+	background-image:url("../images/pyy.jpg");
+	background-repeat:no-repeat;
+	width:956px;
+	height:613px;
+	float:left;
+}
+
+.top_nike{
+	margin-top:30px;
+	width:1960px;
+	height:1140px;
+	font-size:20px;
+	font-weight:bold;
+}
+
+.nike_title{
+	margin-bottom:30px;
+	width:1900px;
+	height:1140px;
+}
+
+.title_left{
+	background:url("../images/NIKE.jpg");
+	width:1900px;
+	height:1140px;
+}
+
+.nike_left{
+	margin-left:25px;
+	width:592px;
+	height:800px;
+	float:left;
+}
+
+.nike_left a{
+	width:592px;
+	height:592px;
+	
+}
+
+.nike_center{
+	margin-left:30px;
+	width:592px;
+	height:800px;
+	float:left;
+}
+
+.nike_center a{
+	width:592px;
+	height:592px;
+	
+}
+
+.nike_right{
+	margin-left:30px;
+	width:592px;
+	height:800px;
+	float:left;
+}
+
+.nike_right a{
+	width:592px;
+	height:592px;
+	
+}
+
+.price{
+	color:red;
+	margin-top:-70px;
+	float:right;
+}
+
+.center_bottom1{
+	position:relative;
+	top:800px;
+	width:1920px;
+	height:500px;
+}
+
+.center_bottom2{
+	position:relative;
+	top:800px;
+	width:1920px;
+	height:500px;
+}
+
+
+.title{
+	
+	padding-right:6px;
+	padding-bottom:20px;
+	line-height:30px;
+	font-size:28px;
+	font-weight:bold;
+}
+
+.month_sale{
+	position:relative;
+	margin-left:30px;
+	top:-800px;
+	left:260px;
+	display:inline-block;
+	width:325px;
+	height:440px;
+	overflow: hidden;
+}
+
+.month_sale a{
+	transition: all 1s;
+	display: block;
+}
+.month_sale:hover{
+	transform: scale(1.02);
+	
+}
+
+.week_protive{
+	position:relative;
+	margin-left:30px;
+	top:-250px;
+	left:260px;
+	display:inline-block;
+	width:325px;
+	height:440px;
+	overflow: hidden;
+}
+
+.week_protive a{
+	transition: all 1s;
+	display: block;
+}
+
+.week_protive:hover{
+	transform: scale(1.02);
+}
+
+.space2{
+	width:100px;
+}

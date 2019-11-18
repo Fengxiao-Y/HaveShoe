@@ -1,0 +1,208 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+    <%
+		String usName=(String)request.getSession().getAttribute("usName"); 	
+ 	 %>
+  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>有家鞋店首页</title>
+  <link rel="stylesheet" href="../css/首页head.css">
+  <link rel="stylesheet" href="../css/首页center.css">
+  <link rel="stylesheet" href="../css/首页bottom.css">
+  <script type="text/html">
+  </script>
+ </head>
+ <body>
+ 	<div class="head_top"><p>
+ 		<c:if test="${usName!=null}">
+ 		<a href="#"><%=usName%></a>
+ 		</c:if>
+ 		<c:if test="${usName==null }">
+ 		<a href="login.html">请登录</a>
+ 		</c:if>
+ 	<a href="register.html">免费注册</a>
+	<c:if test="${usName!=null}"><span><a>我的宝贝</a><a href="../homeToShoppingCar?usName=${usName}">购物车</a><a>收藏夹</a></span></c:if></p>
+	<div class="head_center"><p class="head_logo"></p>
+	<image src="../images/Do.png" style="margin-left:600px;margin-top:-130px;">
+	<input type="search" class="head_search" placeholder="请输入搜索内容" style="height:41px;font-size:16px;">
+	<image src="../images/search.jpg" style="width:36px;height:37px;position:absolute;right:102px;top:230px;"></image>
+	</input>
+	</div>
+	<div class="head_bottom"><a href="../toList">男子</a>
+							<a href="../toList">女子</a>
+							<a href="../toList">儿童</a>
+							<a href="../toList">运动</a>
+							<a href="../toList">品牌</a>
+							<a href="../toList">精选系列</a>
+	</div>
+	</div>
+	<div class="center_top">
+		<a href="../toList">即将发售&nbsp;&nbsp;&#8594;</a>
+	</div>
+	<div class="top_adi">
+		<a href=""><div class="adi_left"></div></a>
+		<a href=""><div class="adi_right"></div></a>
+	</div>
+	<div class="top_nike">
+		<div class="nike_title"><div class="title_left"></div></div>
+		<div class="nike_left"><a href=""><image src="../images/GpTLJF.jpg"></a>
+			<a href="">
+			<p>Air Jordan XXXIV PF</p>
+			<p>男子篮球鞋</p>
+			<div class="price">&yen;1499</div>
+			</a>
+		</div>
+		<div class="nike_center"><a href=""><image src="../images/Zjh9gf.jpg"></a>
+			<a href="">
+			<p>Nike Air&nbsp;Force 1 High '07 LV8 1</p>
+			<p>男子运动鞋</p>
+			<div class="price">&yen;849</div>
+			</a>
+		</div>
+		<div class="nike_right"><a href=""><image src="../images/HjmSmP.jpg"></a>
+			<a href="">
+			<p>LeBron XVII EP</p>
+			<p>男子篮球鞋</p>
+			<div class="price">&yen;1599</div>
+			</a>
+		</div>
+	</div>
+	<div class="center_bottom1">
+		<h3 class="title">本月热卖</h3>
+		<div class="month_sale">
+			<a href=""><image src="../images/test1.jpg.png" style="width:324px;height:324px;display:inline-block;"></a>
+			<a href="">NITE JOGGER 经典鞋</a>
+			<p>&yen;1199</p>
+		</div>
+		<div class="month_sale">
+			<a href=""><image src="../images/test2.jpg.png" style="width:324px;height:324px;display:inline-block;"></a>
+			<a href="">SUPER STAR 经典鞋</a>
+			<p>&yen;799</p>
+		</div>
+		<div class="month_sale">
+			<a href=""><image src="../images/test3.jpg.png" style="width:324px;height:324px;display:inline-block;"></a>
+			<a href="">EQT BASK ADV 经典鞋</a>
+			<p>&yen;1099</p>
+		</div>
+		<div class="month_sale">
+			<a href=""><image src="../images/test4.jpg.png" style="width:324px;height:324px;display:inline-block;"></a>
+			<a href="">QZWEEGO 经典鞋</a>
+			<p>&yen;1099</p>
+		</div>
+	</div>
+	<div class="bottom_background">
+	<div class="center_bottom2">
+		<h3 class="title">本周推荐</h3>
+		<div class="week_protive">
+			<a href=""><image src="../images/test5.jpg.png" style="width:324px;height:324px;display:inline-block;"></a>
+			<a href="">NIZZA HI REF 经典鞋</a>
+			<p>&yen;629</p>
+		</div>
+		<div class="week_protive">
+			<a href=""><image src="../images/test6.jpg.png" style="width:324px;height:324px;display:inline-block;"></a>
+			<a href="">PROHIIRE 经典鞋</a>
+			<p>&yen;1099</p>
+		</div>
+		<div class="week_protive">
+			<a href=""><image src="../images/test7.jpg.png" style="width:324px;height:324px;display:inline-block;"></a>
+			<a href="">NIZZA PRIDE 经典鞋</a>
+			<p>&yen;569</p>
+		</div>
+		<div class="week_protive">
+			<a href=""><image src="../images/test8.jpg" style="width:324px;height:324px;display:inline-block;"></a>
+			<a href="">SUPERCOURD 经典鞋</a>
+			<p>&yen;799</p>
+		</div>
+	</div>
+	</div>
+	<div class="bottom">
+		<table class="bottom_top">
+			<tr>
+				<td class="space"></td>
+				<td><a href="">联系我们</a><image src="../images/massage.png" style="float:right;margin-top:-13px;"></td>
+				<td>在线客服<image src="../images/phone.png" style="float:right;"><br><span>[仅支持中文]</span></td>
+				<td>400-777-5666<image src="../images/youjian.png" style="float:right;"><br><span>[仅支持中文]</span></td>
+				<td>youjia@shoes.com<br><span>[建议及投诉受理邮箱]</span></td>
+				<td>8:00-23:00</td>
+				<td class="space1"></td>
+				<td><a href="">订单追踪</a></td>
+				<td class="space2"></td>
+			</tr>
+		</table>
+		<div class="../bottom_center">
+			<table class="center_table">
+				<tr class="bold_title">
+					<td>产品</td>
+					<td>运动</td>
+					<td>帮助中心</td>
+					<td>网站政策</td>
+					<td>关注我们</td>
+					<td>职业发展</td>
+				</tr>
+				<tr>
+					<td><a href="">鞋类</a></td>
+					<td><a href="">跑步</a></td>
+					<td><a href="">关于员工</a></td>
+					<td><a href="">使用条款</a></td>
+					<td><image src="../images/wechat2.png" style="position:relative; top:-5px;">&nbsp;&nbsp;<image src="../images/wechat.png"></td>
+					<td><image src="../images/job.png"></td>
+				</tr>
+				<tr>
+					<td><a href="">系列</a></td>
+					<td><a href="">训练</a></td>
+					<td><a href="">尺码表</a></td>
+					<td><a href="">隐私声明</a></td>
+				</tr>
+				<tr>
+					<td><a href="">配件</a></td>
+					<td><a href="">训练</a></td>
+					<td><a href="">YJ会员</a></td>
+					<td><a href="">物流配送规则</a></td>
+				</tr>
+				<tr>
+					<td><a href="">最新上市</a></td>
+					<td><a href="">篮球</a></td>
+					<td><a href="">门店查询</a></td>
+					<td><a href="">退换货规则</a></td>
+				</tr>
+				<tr>
+					<td><a href="">新品发售日历</a></td>
+					<td><a href="">户外</a></td>
+					<td><a href="">关于员工</a></td>
+					<td><a href="">使用条款</a></td>
+				</tr>
+				<tr>
+					<td><a href="">限量发售</a></td>
+					<td></td>
+					<td><a href="">企业社会责任</a></td>
+					<td><a href="">下单指南</a></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><a href="">印制服务条款</a></td>
+				</tr>
+				<tr class="payway">
+					<td>我们接受下列付款方式:</td>
+					<td><image src="../images/alipay.png" style="float:left;display:inline-block;">
+					<image src="../images/wechatpay.png" style="margin-left:3px;display:inline-block;">
+					<image src="../images/unionpay.png" style="margin-left:3px;display:inline-block;"></td>
+					<td><image src="../images/paypal.png" style="float:left;display:inline-block;"></td>
+					<td><font style="font-size:14px;">企业团购热线及邮箱:</font></td><td><font style="font-size:14px;">团购热线：021-3636 6842</font></td>
+					<td><font style="font-size:14px;">团购邮箱：youjia.b2b@yj.com</font></td>
+				</tr>
+			</table>
+			<div class="bottom_last">
+				</div>
+		</div>
+	</div>
+ </body>
+</html>

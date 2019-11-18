@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+	<context:component-scan
+		base-package="com.yidu.avg" />
+	<mvc:annotation-driven/>
+	<mvc:resources location="/jsp/" mapping="/jsp/**"></mvc:resources>	
+	<mvc:resources location="/css/" mapping="/css/**"></mvc:resources>	
+	<mvc:resources location="/easyui/" mapping="/easyui/**"></mvc:resources>
+	<mvc:resources location="/js/" mapping="/js/**"></mvc:resources>
+	<mvc:resources location="/images/" mapping="/images/**"></mvc:resources>
+	<mvc:resources location="/commonCss/" mapping="/commonCss/**"></mvc:resources>
+	<mvc:resources location="/commonHtml/" mapping="/commonHtml/**"></mvc:resources>
+	<mvc:resources location="/back/" mapping="/back/**"></mvc:resources>
+	<mvc:resources location="/backAssets/" mapping="/backAssets/**"></mvc:resources>
+	<bean id="jspViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	
+	<!-- 文件上传，并限制文件大小 
+		一定要配置ID，id的名字是固定的
+	-->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="20480000"/>
+	</bean>
+</beans>
